@@ -1,0 +1,22 @@
+.list-title-style {
+    font-size: 2.5em;
+    border: 3px solid;
+    border-radius: 5px;
+    text-align: center;
+    color: beige;
+    background-color: rgb(255, 25, 0);
+    font-weight: bold;
+}
+
+.item-style {
+    color: black;
+    font-size: 2em;
+    margin: 2px;
+    text-align: center;
+    list-style: none;
+}
+
+.item-style:hover {
+    color: rgb(0, 255, 8);
+    cursor: pointer;
+}

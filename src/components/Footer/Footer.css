@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+.footer {
+    background-color: #22303d; /* Dark navy color for elegance */
+    color: white;
+    padding: 20px 0; /* Increased padding for more space, similar to header */
+    width: 100%;
+    position: relative; /* Allow normal flow, not fixed */
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.end-foot {
+    font-size: clamp(1rem, 1vw + 1rem, 1.5rem); /* Responsive font size */
+    color: white; /* Color to match the footer style */
+    margin-top: 20px; /* Spacing to separate from other footer content */
+    font-family: 'Playfair Display', serif; /* Consistent with header and footer */
+    text-align: center;
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 768px) {
+    .end-foot {
+        font-size: clamp(0.9rem, 2.5vw + 0.5rem, 1.2rem); /* Slightly smaller for mobile */
+    }
+}
+
+@media (min-width: 1200px) {
+    .end-foot {
+        font-size: clamp(1.2rem, 1vw + 1rem, 1.8rem); /* Larger on wider screens */
+    }
+}
+
+
+.footer-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically for better readability */
+    justify-content: center; /* Center footer content horizontally */
+    align-items: center;
+    max-width: 1200px; /* Limits the maximum width of the footer */
+    margin: 0 auto; /* Center align container */
+    padding: 0 20px; /* Padding on the sides */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Ensures items stack in a column */
+    align-items: center; /* Center items within the content area */
+}
+
+.footer-menu {
+    list-style: none; /* Remove bullet points */
+    margin: 10px 0 0;
+    padding: 0;
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap for better responsiveness */
+}
+
+.footer-item {
+    margin: 0 20px; /* Space between items, same as navbar */
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em; /* Match the font size in the header */
+    font-family: 'Playfair Display', serif; /* Use the same font as header */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.footer-link:hover {
+    color: #f1c40f; /* Gold color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-menu {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .footer-item {
+        margin: 5px 0; /* Space between items when stacked */
+    }
+}

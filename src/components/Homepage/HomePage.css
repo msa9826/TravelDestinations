@@ -1,0 +1,65 @@
+.homepage {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: -1;
+    overflow: hidden;
+}
+
+.homepage-content {
+    z-index: 1;
+    display: flex; /* Use flex to center content */
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px; /* Padding around the content */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    max-width: 600px; /* Set max width */
+    width: 90%; /* Responsive width */
+    text-align: center; /* Center text inside the box */
+}
+
+h1 {
+    font-size: 2.5rem; /* Larger font size for the title */
+    margin-bottom: 15px; /* Space between title and paragraph */
+    color: #000; /* Black color for the heading */
+    font-family: 'Playfair Display', serif; /* Luxurious font for heading */
+}
+
+.description {
+    font-size: 1.5rem; /* Adjust this to match the font size in Description.jsx */
+    margin-bottom: 20px; /* Space between paragraph and button */
+    color: #585045; /* Luxurious gold tone (example color) */
+    font-family: 'Playfair Display', serif; /* Use the same luxurious font */
+}
+
+.explore-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ff7b54;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #ff5733;
+}
